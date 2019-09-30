@@ -33,7 +33,8 @@ module Bookings
     end
 
     def valid_remaining_quota(input)
-      total_bookings = Booking.where(date: @params[:date]).count
+      total_bookings = Booking.where(movie_id: @params[:movie_id],
+                                     date: @params[:date]).count
       if total_bookings < Constants::MAX_BOOKING_QUOTA
         Success(input)
       else

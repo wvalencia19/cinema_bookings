@@ -90,21 +90,41 @@ describe Api::Routes do
      end
 
      context 'when maximum of bookings reached' do
-       let(:params) do
-         {
-             movie_id: movie.id,
-             customer_id: customer.id,
-             date: today
-         }
+       context 'for the same movie' do
+         let(:params) do
+           {
+               movie_id: movie.id,
+               customer_id: customer.id,
+               date: today
+           }
+         end
+
+         it 'booking is not created' do
+           Constants::MAX_BOOKING_QUOTA.times do
+             create(:booking, movie: movie)
+           end
+           post '/api/v1/bookings', params
+           expect(last_response.status).to eq(400)
+           expect(response_body).to include Constants::MAX_BOOKINGS_REACHED
+         end
        end
 
-       it 'booking is not created' do
-         Constants::MAX_BOOKING_QUOTA.times do
-           create(:booking)
+       context 'for different same movies' do
+         let(:params) do
+           {
+               movie_id: movie.id,
+               customer_id: customer.id,
+               date: today
+           }
          end
-         post '/api/v1/bookings', params
-         expect(last_response.status).to eq(400)
-         expect(response_body).to include Constants::MAX_BOOKINGS_REACHED
+
+         it 'booking is correctly created' do
+           Constants::MAX_BOOKING_QUOTA.times do
+             create(:booking)
+           end
+           post '/api/v1/bookings', params
+           expect(last_response.status).to eq(201)
+         end
        end
      end
     end
