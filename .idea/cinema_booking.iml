@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="CompassSettings">
+    <option name="compassExecutableFilePath" value="$USER_HOME$/.rvm/gems/ruby-2.3.8@cabify/gems/compass-1.0.3/bin/compass" />
+  </component>
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.3, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.2, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.5, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dry-configurable (v0.8.3, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dry-container (v0.7.2, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dry-core (v0.4.9, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dry-equalizer (v0.2.2, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ice_nine (v0.11.2, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="method_source (v0.9.2, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry (v0.12.2, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.8.0, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, RVM: ruby-2.3.8 [cabify]) [gem]" level="application" />
+  </component>
+</module>
