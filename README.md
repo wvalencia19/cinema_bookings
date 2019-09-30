@@ -1,6 +1,6 @@
 # Cinema Booking
 
-This ruby application allows you to create bookings for movies.
+This Ruby application allows you to create bookings for movies.
 
 ## Requirements
  * Ruby 2.5.1 or higher
